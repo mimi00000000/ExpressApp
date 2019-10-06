@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     var Lead = sequelize.define('Lead', {
             id: {
                 type: DataTypes.UUID,
-                defaultValue: DataTypes.UUID4,
+                defaultValue: DataTypes.UUIDV4,
                 allowNull: false,
                 primaryKey: true
             },
