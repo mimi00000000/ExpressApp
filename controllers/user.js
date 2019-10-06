@@ -1,10 +1,5 @@
 let models = require("../models");
-let bcrypt = require("bcrypt");
-const passport = require('passport');
-const myPassport = require('../passport_setup')(passport);
-let flash = require('connect-flash');
-const { isEmpty } = require('lodash');
-const { validateUser } = require('../validators/signup');
+
 
 exports.show_login = function (req, res, next) {
     res.render('user/login', { formData: {}, errors: {} });
